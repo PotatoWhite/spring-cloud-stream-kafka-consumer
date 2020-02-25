@@ -1,0 +1,9 @@
+spring.cloud.stream.bindings:
+  input:
+    destination: topic01
+    group: group01
+
+spring:
+  kafka:
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
